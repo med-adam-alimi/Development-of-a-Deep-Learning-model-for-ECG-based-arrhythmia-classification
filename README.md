@@ -1,56 +1,55 @@
-# Development-of-a-Deep-Learning-model-for-ECG-based-arrhythmia-classification
+# 🫀 ECG-Based Arrhythmia Classification with Deep Learning
 
-# 🫀 ECG-Based Arrhythmia Classification using Deep Learning
-
-This project focuses on the development of a deep learning model for classifying cardiac arrhythmias from ECG (electrocardiogram) signals. The goal is to support early diagnosis of heart rhythm disorders using AI.
-
----
-
-## 📌 Table of Contents
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Model](#model)
-- [Results](#results)
-- [License](#license)
-- [About Me](#about-me)
-
----
-
-## 🧠 Overview
-
-I am currently focusing on AI and deep learning applications, especially in healthcare. This project uses deep learning techniques to classify ECG data and demonstrates how machine learning can assist in medical diagnosis. It also explores the deployment of AI models on web and mobile platforms using Flutter and Firebase.
+## 📌 Overview
+This project focuses on developing a **deep learning model** for classifying cardiac arrhythmias from ECG (electrocardiogram) signals.  
+It combines **CNNs, Transformer encoders, and Wavelet transforms** to capture both spatial and temporal features of ECG signals.  
+Goal: Support early detection of arrhythmias and assist doctors in decision-making.
 
 ---
 
 ## 📊 Dataset
-
-The ECG data used for training and evaluation was sourced from a publicly available dataset on **Kaggle**.
+- **Source**: MIT-BIH Arrhythmia Dataset (109,000+ samples)  
+- **Classes**: 5 arrhythmia types  
+- **Preprocessing**: Continuous Wavelet Transform (CWT), normalization, data augmentation, SMOTE  
 
 ---
 
-## 🏗️ Model
-
-The deep learning model combines:
-- **Convolutional Neural Networks (CNNs)** for feature extraction from ECG signals
-- **Transformer-based layers** for learning temporal and sequential patterns
-
+## 🏗️ Model Architecture
+- **Dual-branch architecture**:  
+  - CNN layers → feature extraction  
+  - Transformer encoders → sequential/temporal patterns  
+- **Optimization**: Mixed precision training (AMP), early stopping, cross-validation
+  
 ---
 
 ## 📈 Results
+- **Accuracy**: 99.26%  
+- **F1-score**: 90.25%  
+- **Minority Class Recall**: +20% (via SMOTE + augmentation)  
 
-- **Accuracy:** 0.97
-- **F1 Score:** 0.94
+📉 Performance visualization:  
+- Confusion matrix  
+- ROC curves  
 
-The model achieved high performance in distinguishing between different types of arrhythmias using single-lead ECG data.
+---
+
+## 🛠️ Technology Stack
+- **AI/ML**: PyTorch, scikit-learn  
+- **Deployment**: Flask/Flutter integration for demo app  
+- **Tools**: Jupyter, Google Colab  
+
+---
+
+## 📚 Academic Contribution
+- Demonstrated potential of **dual-branch deep learning** for medical signals.  
+- Showcased integration of AI in **real-world healthcare contexts**.  
 
 ---
 
 ## 📄 License
+MIT License – free for research and academic use.  
 
-This project is licensed under the **MIT License**.  
-Feel free to use, modify, and share it with proper credit.
-
----
+Developed by **Mohamed Adam Alimi (INSAT, Tunisia)**.  
 
 ## 🙋‍♂️ About Me
 
